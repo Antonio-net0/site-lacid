@@ -797,21 +797,6 @@ body {
     margin-bottom: 8px;
 }
 
-.box-imagem {
-    background-color: var(--azul-claro);
-    color: var(--bg-branco);
-    padding: 80px 30px;
-    border-radius: 20px;
-    text-align: center;
-    font-family: 'AvantGarde-Bold', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    min-height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .box-links {
     background-color: var(--bg-branco);
     padding: 30px;
@@ -924,10 +909,5 @@ body {
     .coluna-anexos {
         min-width: auto;
         width: 100%;
-    }
-    
-    .box-imagem {
-        min-height: 200px;
-        padding: 50px 20px;
     }
 }

@@ -13,7 +13,7 @@
         <nav>
 		<a href="#quem-somos">Quem somos</a>
 		<a href="#atividades">Atividades</a>
-		<a href="#membros">Membros Ativos</a>
+		<!-- <a href="#membros">Membros Ativos</a> -->
 	</nav>
 		<button class="btn-aba-lateral"><i class="bi bi-envelope-fill"></i> Contato</button>
 	</header>
@@ -28,9 +28,9 @@
 		<div class="hero-left">
 		<div class="carousel-container">
 			<div class="carousel-track" id="track">
-                        <img src="https://via.placeholder.com/800x500/1369D0/FFFFFF?text=Hackathon+LACID" class="slide" alt="Foto 1" loading="lazy">
-                        <img src="https://via.placeholder.com/800x500/7280ED/FFFFFF?text=Reuniao+LACID" class="slide" alt="Foto 2" loading="lazy">
-                        <img src="https://via.placeholder.com/800x500/FBAEE2/F20612?text=Projetos" class="slide" alt="Foto 3" loading="lazy">
+                        <img src="img/IMG-20251204-WA0013.jpg" class="slide" alt="Eventos LACID" loading="lazy">
+                        <img src="img/IMG-20251204-WA0030.jpg" class="slide" alt="Atividades LACID" loading="lazy">
+                        <img src="img/IMG-20251220-WA0007.jpg" class="slide" alt="Projetos LACID" loading="lazy">
 		</div>
 		<div class="carousel-dots">
 			<span class="dot active" onclick="currentSlide(0)"></span>
@@ -105,7 +105,7 @@ Se você tem curiosidade por tecnologia, gosta de desafios e quer construir expe
             </div>
         </section>
 
-        <section id="membros" class="section-container">
+        <!-- <section id="membros" class="section-container">
             <h2 class="titulo-secao-membros">MEMBROS ATIVOS</h2>
             <div class="grid-membros">
                 <div class="card-membro">
@@ -151,7 +151,7 @@ Se você tem curiosidade por tecnologia, gosta de desafios e quer construir expe
                     </a>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <script>
@@ -248,7 +248,7 @@ Se você tem curiosidade por tecnologia, gosta de desafios e quer construir expe
         }, observerOptions);
         
         // Aplica animação aos cards
-        document.querySelectorAll('.card, .card-membro').forEach(card => {
+        document.querySelectorAll('.card').forEach(card => {
             card.style.opacity = '0';
             card.style.transform = 'translateY(30px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -264,7 +264,7 @@ Se você tem curiosidade por tecnologia, gosta de desafios e quer construir expe
             e.preventDefault();
             const icone = '<i class="bi bi-envelope-at-fill" style="margin-right: 8px;"></i>';
             const mensagem = document.createElement('div');
-            mensagem.innerHTML = icone + 'Entre em contato: lacid@example.com';
+            mensagem.innerHTML = icone + 'Entre em contato: lacid.ifs@gmail.com';
             mensagem.style.cssText = `
                 position: fixed;
                 top: 100px;
@@ -329,16 +329,16 @@ Se você tem curiosidade por tecnologia, gosta de desafios e quer construir expe
             }
         });
         
-        // ============================================
-        // CONTADOR DE MEMBROS (ANIMAÇÃO)
-        // ============================================
-        const cardsMembros = document.querySelectorAll('.card-membro');
-        const numeroMembros = cardsMembros.length;
+        // // ============================================
+        // // CONTADOR DE MEMBROS (ANIMAÇÃO)
+        // // ============================================
+        // const cardsMembros = document.querySelectorAll('.card-membro');
+        // const numeroMembros = cardsMembros.length;
         
-        // Adiciona um contador animado (opcional)
-        if (numeroMembros > 0) {
-            console.log(`LACID tem ${numeroMembros} membros ativos!`);
-        }
+        // // Adiciona um contador animado (opcional)
+        // if (numeroMembros > 0) {
+        //     console.log(`LACID tem ${numeroMembros} membros ativos!`);
+        // }
     </script>
 </body>
 </html>
